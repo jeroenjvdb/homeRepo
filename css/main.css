@@ -1,3 +1,4 @@
+@use "sass:map";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7263,3 +7264,19 @@ body, html {
 .carousel-control.right, .carousel-control.left {
   background-color: rgba(0, 0, 0, 0);
   background-image: none; }
+
+.spec-set h6 {
+  background-color: #060c2c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-top: 20px;
+  color: #caab57; }
+
+.spec-set .row {
+  border-bottom: 1px solid;
+  border-bottom-color: #060c2c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px; }

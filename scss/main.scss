@@ -5,7 +5,7 @@ $theme-colors: (
 );
 
 // imports
-
+@use "sass:map";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @include media-breakpoint-down(sm) { 
@@ -139,3 +139,24 @@ body, html {
 .carousel-control { background-color: rgba(0, 0, 0, 0); bottom: auto; font-size: 20px; left: 0; position: absolute; top: 30%; width: auto; }
 
 .carousel-control.right, .carousel-control.left { background-color: rgba(0, 0, 0, 0); background-image: none; }
+
+.spec-set h6 {
+    background-color: rgb(6,12,44);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    
+    margin-top: 20px;
+    color: #caab57;
+}
+
+.spec-set .row {
+    border-bottom: 1px solid ;
+    border-bottom-color: rgb(6,12,44);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
