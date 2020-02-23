@@ -7139,7 +7139,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .container {
-  margin-top: 50px;
   margin-bottom: 50px; }
 
 .no-padding-x {
@@ -7167,7 +7166,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1, h2, h3, h4, h5, h6 {
   padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 40px; }
 
 body, html {
   height: 100%; }
