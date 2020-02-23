@@ -1,0 +1,84 @@
+// variable overrides
+$body-bg: #EEE;
+$theme-colors: (
+  "primary": rgb(6,12,44),
+);
+
+// imports
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@include media-breakpoint-down(sm) { 
+    .carousel-inner {
+        max-height: 300px;
+    }
+}
+
+@include media-breakpoint-down(xl) { 
+    .carousel-inner {
+        max-height: 450px;
+    }
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.no-padding-x {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.spec-set {
+    padding-bottom: 20px;
+}
+
+.opendeur-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#contact {
+    color: #EEE;
+    padding-bottom: 50px;
+}
+#contact a {
+    color: #EEE;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/buidling.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}

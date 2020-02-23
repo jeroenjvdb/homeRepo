@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css"></style>
+    <link rel="stylesheet" href="css/main.css"></style>
 </head>
 <body>
     <!--  -->
 
     <!-- menu -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,10 +60,17 @@
 
     <!-- Carousel -->
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="hero-image">
+        <div class="hero-content">
+            <h2>Park Den Brandt, Luxueuze instapklare woning met prachtige Zuidwest gerichte tuin</h2>
+        </div>
+    </div>
+
+    <!--
+    <div id="carouselExampleControls" class="carousel slide container-fluid no-padding-x" data-ride="carousel">
         <div class="carousel-inner" style="height: 600px">
             <div class="carousel-item active">
-            <img class="d-block w-100" src="img/carousel1-test.png" alt="First slide">
+            <img class="d-block w-100" src="img/building.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
             <img class="d-block w-100" src="img/carousel2-test.jpg" alt="Second slide">
@@ -82,9 +89,8 @@
         </a>
     </div>
 
-    <div class="container">
-        <h2>Park Den Brandt, Luxueuze instapklare woning met prachtige Zuidwest gerichte tuin</h2>
-    </div>
+    <div class="container" style="position: absolute;">
+    </div> -->
     
     <!-- beschrijving -->
 
@@ -97,16 +103,16 @@
             <li>Ligging: park ‘Den Brandt’ Platanenlaan 17, 2610 Wilrijk</li>
         </ul>
 
-        <p>Gelijkvloers :<br />
+        <p><strong>Gelijkvloers :</strong><br />
 
         Voortuinstrook met beplanting en deels aangelegd als oprit, inkomhal met trap en vestiaire, inpandige garage met automatische poort, wasplaats/strijkplaats, stookplaats viessman HR gas condensatie ketel, overdekt terras, berging , prachtige nieuw aangelegde ZW Tuin (T Shape)
         </p><p>
-        Eerste verdieping :<br />
+        <strong>Eerste verdieping :</strong> <br />
 
         Overloop, aparte wc, Living L-vorm op massief parket, bureau, open haard, eetplaats , keuken, terras met buitentrap naar de tuin
         </p><p>
 
-        Tweede verdieping :<br />
+        <strong>Tweede verdieping :</strong> <br />
 
         Overloop met ingebouwde kasten, Master bedroom met ensuite badkamer met ligbad, 2 lavabo’s , handoekdroger.
         2e badkamer , regendouche , 1 lavabo en toilet , handoekdroger. <br />
@@ -259,7 +265,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-8"> Woensdag 04/03 13u00-17u00 </div>
-                    <div class="col-4"><a href="" class="btn btn-secondary">Aanmelden</a></div>
+                    <div class="col-4"><a href="" class="btn btn-primary">Aanmelden</a></div>
                 </div>
             </div>
         </div>
@@ -267,7 +273,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-8"> Zaterdag 07/03 10u00-17u00 </div>
-                    <div class="col-4"><a href="" class="btn btn-secondary">Aanmelden</a></div>
+                    <div class="col-4"><a href="" class="btn btn-primary">Aanmelden</a></div>
                 </div>
             </div>
         </div>
@@ -279,7 +285,7 @@
 
 
     <!-- contactgegevens -->
-    <div id="contact">
+    <div id="contact" class="bg-primary">
         <div class="container">
             <h2>Contact</h2>
             <div class="row">
@@ -310,36 +316,7 @@
         });
     </script>
     <style>
-        body {
-            background-color: #EEE;
-        }
-
-        .container, .container-fluid {
-            padding-top: 50px;
-        }
-
-        .no-padding-x {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .spec-set {
-            padding-bottom: 20px;
-        }
-
-        .opendeur-item {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        #contact {
-            background-color: #222;
-            color: #EEE;
-            padding-bottom: 50px;
-        }
-        #contact a {
-            color: #EEE;
-            text-decoration: none;
-        }
+        
     </style>
 </body>
 </html>
