@@ -36,6 +36,11 @@ $theme-colors: (
     }
 }
 
+body {
+    font-family: 'Helvetica', 'Avenir', 'Calibri', 'sans-serif';
+    font-weight: 350;
+}
+
 .no-padding-y {
     padding-top: 0;
     padding-bottom: 0;
