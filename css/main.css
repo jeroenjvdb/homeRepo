@@ -7227,8 +7227,10 @@ body, html {
     .hero-content h3 {
       font-size: 0.4em; } }
 
-.hero-item .value {
-  font-size: 1.5em; }
+.hero-item {
+  white-space: nowrap; }
+  .hero-item .value {
+    font-size: 1.5em; }
 
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   position: relative; }
