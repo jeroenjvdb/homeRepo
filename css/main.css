@@ -7138,6 +7138,10 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@font-face {
+  font-family: 'Avenir';
+  src: url("fonts/AvenirLTStd-Book.otf") format("opentype"); }
+
 .container {
   margin-bottom: 50px; }
 
@@ -7151,8 +7155,15 @@ a.text-dark:hover, a.text-dark:focus {
     padding-right: 0 !important; } }
 
 body {
-  font-family: 'Helvetica', 'Avenir', 'Calibri', 'sans-serif' !important;
+  font-family: 'Avenir', 'sans-serif';
   font-weight: 350; }
+
+.navbar-brand {
+  max-height: 50px; }
+  .navbar-brand img {
+    vertical-align: middle;
+    position: relative;
+    top: -10px; }
 
 .no-padding-y {
   padding-top: 0;
@@ -7200,9 +7211,21 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; }
-
-.hero-item .key {
-  font-size: 0.8em; }
+  .hero-content img {
+    max-width: 300px; }
+  .hero-content h3, .hero-content h4 {
+    padding-top: 20px;
+    padding-bottom: 0; }
+  .hero-content h4 {
+    font-size: 2.5em; }
+  @media (max-width: 767.98px) {
+    .hero-content .hero-item p {
+      font-size: 1em; }
+    .hero-content h4 {
+      font-size: 1.3em; } }
+  @media (max-width: 575.98px) {
+    .hero-content h3 {
+      font-size: 0.4em; } }
 
 .hero-item .value {
   font-size: 1.5em; }

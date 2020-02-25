@@ -6,11 +6,15 @@ $theme-colors: (
 
 // imports
 @import "../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/AvenirLTStd-Book.otf') format('opentype');
+}
 
 @include media-breakpoint-down(sm) { 
     .carousel-inner {
        // max-height: 300px;
-    }
+    } 
 }
 
 @include media-breakpoint-down(xl) { 
@@ -36,9 +40,21 @@ $theme-colors: (
     }
 }
 
+
 body {
-    font-family: 'Helvetica', 'Avenir', 'Calibri', 'sans-serif' !important;
+    font-family: 'Avenir', 'sans-serif';
+    //font-family: 'Helvetica', 'Avenir', 'Calibri', 'sans-serif' !important;
     font-weight: 350;
+}
+
+.navbar-brand {
+    max-height: 50px;
+
+    img {
+        vertical-align: middle;
+        position: relative;
+        top: -10px;
+    }
 }
 
 .no-padding-y {
@@ -97,13 +113,46 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
+  img {
+      max-width: 300px;
+  }
+
+  h3, h4 {
+      padding-top: 20px;
+      padding-bottom: 0;
+
+  }
+@include media-breakpoint-down(xl) {
+    h4 {
+        font-size: 2.5em;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .hero-item p {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 1.3em;
+        
+    }
   
+}
+
+@include media-breakpoint-down(xs) {
+    h3 {
+        font-size: 0.4em;
+    }
+  
+}
+
 }
 
 .hero-item{
 
     .key {
-        font-size: 0.8em; 
+        //font-size: 0.8em; 
     }
     .value {
         font-size: 1.5em;
