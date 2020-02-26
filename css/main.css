@@ -7155,7 +7155,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-right: 0 !important; } }
 
 body {
-  font-family: 'Avenir', 'sans-serif';
+  font-family: 'Avenir', sans-serif;
   font-weight: 350; }
 
 .navbar-brand {
